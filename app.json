@@ -1,0 +1,22 @@
+{
+    "name": "Qadeer session",
+    "description": "a session generator for Qadeer md-bot",
+    "logo": "https://files.catbox.moe/eth3xg.jpg",
+    "repository": "https://github.com/EM-QADEER/QADEER-MD",
+    "keywords": ["QADEER-MD BOT"],
+    "success_url": "/", 
+    "buildpacks": [{ "url": "https://github.com/heroku/heroku-buildpack-nodejs#latest" } ],
+    "env": {      
+      "PORT": {
+        "description": "Port for web app.4000,5000,3000... any!",
+        "value": "5000",
+        "required": false 
+      },
+      "MESSAGE": {
+        "description": "This site is only for session generating",
+        "value": "",
+        "required": false 
+      }
+    }   
+
+}
