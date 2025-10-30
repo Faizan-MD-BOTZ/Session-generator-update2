@@ -59,15 +59,15 @@ router.get('/', async (req, res) => {
                     const data = fs.readFileSync(__dirname + `/temp/${id}/creds.json`);
                     await delay(5000);
                     const b64data = Buffer.from(data).toString('base64');
-                    const session = await client.sendMessage(client.user.id, { text: 'QADEER-MD~' + b64data });
+                    const session = await client.sendMessage(client.user.id, { text: 'FAIZAN-AI~' + b64data });
 
                     // Send message after session
                     await client.sendMessage(client.user.id, {text: `
 ╔════════════════════
 ║ ◇ SESSION CONNECTED ◇
-║ 🔹 BOT: QADEER-MD
+║ 🔹 BOT: FAIZAN-AI
 ║ 🔹 TYPE: BASE64
-║ 🔹 OWNER: NAWAB-QADEER
+║ 🔹 OWNER: FAZI-JUTT
 ╚════════════════════` }, { quoted: session });
                     
                     await delay(100);
