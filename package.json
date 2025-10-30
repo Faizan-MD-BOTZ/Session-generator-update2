@@ -1,5 +1,5 @@
 {
-    "description": "Qadeer session generator",
+    "description": "Faizan session generator",
     "main": "./index.js",
   "engines" : { 
     "npm" : ">=9.7.2",
